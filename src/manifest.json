@@ -1,0 +1,20 @@
+{
+  "name": "Venus App",
+  "short_name": "Venus App",
+  "icons": [
+    {
+      "src": "assets/icons/venus-logo.png",
+      "sizes": "300x300",
+      "type": "image\/png"
+    },
+    {
+      "src": "assets/icons/venus-logo-big.png",
+      "sizes": "600x600",
+      "type": "image\/png"
+    }
+  ],
+  "display": "standalone",
+  "theme_color": "#002C5C",
+  "background_color": "#ffffff",
+  "start_url": "./?utm_source=web_app_manifest"
+}
