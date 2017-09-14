@@ -1,3 +1,31 @@
-.menu-btn{
-  color:white;
+.header-toolbar {
+  .menu-btn {
+    color : white;
+  }
+  .logo-and-title {
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    flex-direction  : row-reverse;
+    img {
+      width : 4vw;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  .header-toolbar {
+    .logo-and-title {
+      display         : flex;
+      align-items     : center;
+      justify-content : space-between;
+      flex-direction  : row-reverse;
+      font-size:12px;
+      img {
+        width :40px;
+      }
+    }
+  }
+
 }
