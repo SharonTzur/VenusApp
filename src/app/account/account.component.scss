@@ -1,0 +1,43 @@
+.login-wrapper {
+
+  background-color: #818181;  height: 100vh;
+  .venus-logo{
+    max-width:100%;
+    img{
+      max-width: 60%;
+    }
+  }
+  .container {
+    position: fixed;
+    top: 25%;
+    right: 37%;
+    text-align: center;
+    width: auto;
+    .login-box {
+      /*width: 26vw;
+      height: 350px;
+      background-color: lightgray;*/
+      width: 26vw;
+      height: 100%;
+      background-color: lightgray;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+      padding: 40px 0;
+    }
+  }
+}
+
+@media screen and(max-width: 768px){
+  .login-wrapper{
+    .container{
+      right:0;
+      top: 10vh;
+      width:100%;
+      .login-box{
+        width:100%;
+      }
+    }
+  }
+}

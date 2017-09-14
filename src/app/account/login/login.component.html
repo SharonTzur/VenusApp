@@ -1,0 +1,34 @@
+<div class="row">
+<form [formGroup]="loginForm" class="login-form" (ngSubmit)="login(loginForm.value)" novalidate>
+    <small class="error-message"
+           *ngIf="loginForm.get('email').invalid && loginForm.get('email').touched">
+        נא להזין כתובת אי-מייל תקינה.
+    </small>
+    <div class="input-wrapper">
+        <i class="material-icons">person</i>
+        <input type="text" placeholder="אימייל" name="email"
+               formControlName="email" required/>
+    </div>
+    <small class="error-message"
+           *ngIf="loginForm.get('password').touched && loginForm.get('password').hasError('invalidPassword')">
+        נא להזין סיסמה תקינה.
+    </small>
+    <div class="input-wrapper">
+        <i class="material-icons">lock</i>
+        <input type="password" placeholder="סיסמה" name="password"
+               formControlName="password" required/>
+    </div>
+    <button type="submit" class="login-button" [disabled]="loginForm.invalid"
+            [ngClass]="{'enable-button':loginForm.valid}">
+התחבר
+    </button>
+</form>
+</div>
+<div class="row lower-section">
+    <div class="col s12 reset-pass">
+        <a [routerLink]="['/account/forgotPassword']">שכחת סיסמה?</a>
+    </div>
+    <div class="server-errors" >
+        {{errorMsg}}
+    </div>
+</div>

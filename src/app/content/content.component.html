@@ -1,0 +1,12 @@
+<div class="content {{currentRoute}}">
+    <app-header (openMenu)="openSidenav()"></app-header>
+    <md-sidenav-container class="content-container">
+        <md-sidenav align="end" #sidenav class="example-sidenav">
+            <app-sidebar></app-sidebar>
+        </md-sidenav>
+        <div class="example-sidenav-content">
+            <router-outlet></router-outlet>
+        </div>
+    </md-sidenav-container>
+</div>
+

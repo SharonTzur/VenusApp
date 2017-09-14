@@ -1,0 +1,120 @@
+.login-form {
+  width       : 60%;
+  margin      : 0 auto;
+  padding-top : 50px;
+  height      : 100%;
+  display     : inline-block;
+  position    : relative;
+  .input-wrapper {
+    display       : flex;
+    margin-bottom : 30px;
+    .material-icons {
+      display    : inline-block;
+      width      : 10%;
+      align-self : center;
+
+      font-size  : 36px;
+      color      : grey;
+    }
+    input {
+      display      : inline-block;
+      width        : 85%;
+      align-self   : center;
+      height       : 30px;
+      margin       : 0px;
+      margin-right : 5%;
+      color        : grey;
+      &::-webkit-input-placeholder {
+        color : grey;
+      }
+      &::-moz-placeholder {
+        color : grey;
+      }
+      &:-ms-input-placeholder {
+        color : grey;
+      }
+      &:-moz-placeholder {
+        color : grey;
+      }
+    }
+
+  }
+  .error-message {
+    display       : block;
+    color         : red;
+    text-align    : right;
+    width         : 100%;
+    padding-right : 15%;
+  }
+  .checkbox-wrapper {
+    label {
+      padding-right : 35px;
+      padding-left  : 0px;
+      float         : right;
+      color         : grey;
+      &:before {
+        left : 73px;
+        top  : 2px;
+      }
+      &:after {
+        left : 72px;
+        top  : 2px;
+      }
+    }
+
+  }
+  .login-button {
+    width              : 100px;
+    float              : left;
+    background-color   : grey;
+    border             : none;
+    color              : white;
+    -webkit-box-shadow : 10px 10px 45px -7px rgba(0, 0, 0, 1);
+    -moz-box-shadow    : 10px 10px 45px -7px rgba(0, 0, 0, 1);
+    box-shadow         : 10px 10px 45px -7px rgba(0, 0, 0, 1);
+    cursor: not-allowed;
+    font-size: 0.7vw;
+    padding: 0.5vw;
+    margin-bottom: 1vw;
+    &.enable-button {
+      background-color : #002C5C;
+      cursor : pointer;
+      font-size: 1vw;
+      width:100%;
+    }
+    transition: 0.5s linear;
+  }
+}
+
+.lower-section {
+  margin-top : 20px;
+  width      : 68%;
+  margin     : 0 auto;
+  .reset-pass {
+    color      : grey;
+    text-align : left;
+    cursor     : pointer;
+  }
+  .server-errors {
+    color      : red;
+    text-align : center;
+  }
+}
+
+@media screen and(max-width: 768px){
+  .login-form{
+    width: 90%;
+    padding-top:0;
+    .login-button{
+      font-size: 20px;
+      padding: 10px;
+      margin-bottom: 15px;
+      &.enable-button {
+        background-color : #002C5C;
+        cursor : pointer;
+        font-size: 24px;
+        width:100%;
+      }
+    }
+  }
+}
