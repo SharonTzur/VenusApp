@@ -186,7 +186,7 @@ export class HttpService {
         else if(res.headers.has('Authorization')){
             this.authService.setToken(res.headers.get('Authorization').replace('Bearer ', ''));
         }
-        let body = res.json();
+        let body = res.json().data;
 
         return body || {};
     }

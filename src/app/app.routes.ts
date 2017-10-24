@@ -10,6 +10,7 @@ import {ContentComponent} from "./content/content.component";
 import {DashboardComponent} from "./content/dashboard/dashboard.component";
 import {LearningProcessComponent} from "./content/learning-process/learning-process.component";
 import {LearningResourcesComponent} from "./content/learning-resources/learning-resources.component";
+import {LevelsComponent} from "./content/levels/levels.component";
 
 const appRoutes: Routes = [
 
@@ -27,8 +28,10 @@ const appRoutes: Routes = [
         path: 'content', component: ContentComponent, canActivate: [LoggedInGuard],
         children: [
             {path: 'dashboard', component: DashboardComponent},
-            {path: 'learning-process', component: LearningProcessComponent},
+            {path: 'levels', component: LevelsComponent},
             {path: 'learning-resources', component: LearningResourcesComponent},
+            {path: 'learning-process', component: LearningProcessComponent},
+
         ]
     }
 

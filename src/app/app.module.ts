@@ -15,6 +15,7 @@ import {AuthService} from "./services/auth/auth.service";
 import {HttpModule, JsonpModule} from "@angular/http";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {ContentModule} from "./content/content.module";
+import {LevelService} from "./services/level/level.service";
 
 @NgModule({
     declarations: [
@@ -37,6 +38,7 @@ import {ContentModule} from "./content/content.module";
         HttpService,
         LocalStorageService,
         AuthService,
+        LevelService,
         {provide: LocationStrategy, useClass: HashLocationStrategy}
     ],
     bootstrap: [AppComponent]
