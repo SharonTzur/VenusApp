@@ -5,6 +5,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import {ContentComponent} from "./content.component";
 import {SharedModule} from "../shared/shared.module";
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { LearningProcessComponent } from './learning-process/learning-process.component';
+import { LearningResourcesComponent } from './learning-resources/learning-resources.component';
 
 @NgModule({
   imports: [
@@ -14,7 +16,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ContentComponent,
     HeaderComponent,
     SidebarComponent,
-    DashboardComponent
+    DashboardComponent,
+    LearningProcessComponent,
+    LearningResourcesComponent
   ]
 })
 

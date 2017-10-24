@@ -18,17 +18,17 @@ export class UserService {
     }
 
      resetPassword(formObject: any) {
-        return this.httpService.post(formObject, '/user/agent/resetpassword', false)
+        return this.httpService.post(formObject, '/auth/resetpassword', false)
             .map(this.updateAuth.bind(this));
     }
 
      forgetPassword(email: string) {
-        return this.httpService.post(email, '/user/agent/sendnewpassword', false);
+        return this.httpService.post(email, '/auth/sendnewpassword', false);
     }
 
      changePassword(formObject: any) {
         formObject.email = this.getUserEmail();
-        return this.httpService.post(formObject, '/user/agent/changepassword', true);
+        return this.httpService.post(formObject, '/auth/changepassword', true);
     }
 
     // Get user
@@ -68,4 +68,6 @@ export class UserService {
         this.router.navigate(['content/dashboard']);
         return res;
     }
+
+
 }

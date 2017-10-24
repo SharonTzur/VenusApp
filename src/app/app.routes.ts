@@ -8,6 +8,8 @@ import {ChangePasswordComponent} from "./account/change-password/change-password
 import {LoginComponent} from "./account/login/login.component";
 import {ContentComponent} from "./content/content.component";
 import {DashboardComponent} from "./content/dashboard/dashboard.component";
+import {LearningProcessComponent} from "./content/learning-process/learning-process.component";
+import {LearningResourcesComponent} from "./content/learning-resources/learning-resources.component";
 
 const appRoutes: Routes = [
 
@@ -24,7 +26,9 @@ const appRoutes: Routes = [
     {
         path: 'content', component: ContentComponent, canActivate: [LoggedInGuard],
         children: [
-            {path: 'dashboard', component: DashboardComponent}
+            {path: 'dashboard', component: DashboardComponent},
+            {path: 'learning-process', component: LearningProcessComponent},
+            {path: 'learning-resources', component: LearningResourcesComponent},
         ]
     }
 

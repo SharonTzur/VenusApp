@@ -1,24 +1,30 @@
 <ul class="side-menu">
     <li class="menu-item">
-        <a routerLink="/content/dashboard" routerLinkActive="active-link">
+        <a routerLink="/content/dashboard" routerLinkActive="active-link" (click)="onItemClicked()">
+            <i class="material-icons">dashboard</i>
+            <span>דשבורד</span>
+        </a>
+    </li>
+    <li class="menu-item">
+        <a routerLink="/content/learning-process" routerLinkActive="active-link" (click)="onItemClicked()">
             <i class="material-icons">person</i>
             <span>ההתקדמות שלי</span>
         </a>
     </li>
     <li class="menu-item">
-        <a routerLink="/content/materials" routerLinkActive="active-link">
+        <a routerLink="/content/learning-resources" routerLinkActive="active-link" (click)="onItemClicked()">
             <i class="material-icons">library_books</i>
             <span>חומרים</span>
         </a>
     </li>
     <li class="menu-item">
-        <a routerLink="/content/qna" routerLinkActive="active-link">
+        <a routerLink="/content/qna" routerLinkActive="active-link" (click)="onItemClicked()">
             <i class="material-icons">question_answer</i>
             <span>שאלות ותשובות</span>
         </a>
     </li>
     <li class="menu-item">
-        <a routerLink="/content/settings" routerLinkActive="active-link">
+        <a routerLink="/content/settings" routerLinkActive="active-link" (click)="onItemClicked()">
             <i class="material-icons">settings</i>
             <span>הגדרות</span>
         </a>

@@ -1,8 +1,8 @@
 <div class="content {{currentRoute}}">
-    <app-header (openMenu)="openSidenav()"></app-header>
+    <app-header (toggleMenu)="toggleSidenav()"></app-header>
     <md-sidenav-container class="content-container">
         <md-sidenav align="end" #sidenav class="example-sidenav">
-            <app-sidebar></app-sidebar>
+            <app-sidebar (toggleMenu)="toggleSidenav()"></app-sidebar>
         </md-sidenav>
         <div class="example-sidenav-content">
             <router-outlet></router-outlet>

@@ -19,7 +19,7 @@ export class ContentComponent implements OnInit {
         this.currentRoute = this.router.url;
     }
 
-    openSidenav() {
+    toggleSidenav() {
         this.sidenav.toggle();
     }
 }
