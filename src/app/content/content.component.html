@@ -1,12 +1,12 @@
 <div class="content {{currentRoute}}">
     <app-header (toggleMenu)="toggleSidenav()"></app-header>
-    <md-sidenav-container class="content-container">
-        <md-sidenav align="end" #sidenav class="example-sidenav">
+    <mat-sidenav-container class="content-container">
+        <mat-sidenav align="end" #sidenav class="example-sidenav">
             <app-sidebar (toggleMenu)="toggleSidenav()"></app-sidebar>
-        </md-sidenav>
+        </mat-sidenav>
         <div class="example-sidenav-content">
             <router-outlet></router-outlet>
         </div>
-    </md-sidenav-container>
+    </mat-sidenav-container>
 </div>
 

@@ -5,11 +5,11 @@ import {ReactiveFormsModule, FormsModule} from "@angular/forms";
 import {LoggedInGuard} from "./guards/logged-in.guard";
 import {RouterModule} from "@angular/router";
 import {
-    MdButtonModule,
-    MdMenuModule,
-    MdToolbarModule,
-    MdIconModule,
-    MdCardModule, MdSidenavModule
+    MatButtonModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatCardModule, MatSidenavModule
 } from '@angular/material';
 
 
@@ -19,12 +19,12 @@ import {
         RouterModule,
         FormsModule,
         ReactiveFormsModule,
-        MdButtonModule,
-        MdMenuModule,
-        MdToolbarModule,
-        MdIconModule,
-        MdCardModule,
-        MdSidenavModule
+        MatButtonModule,
+        MatMenuModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatCardModule,
+        MatSidenavModule
     ],
     declarations: [LoaderComponent],
     exports: [
@@ -33,12 +33,12 @@ import {
         FormsModule,
         ReactiveFormsModule,
         LoaderComponent,
-        MdButtonModule,
-        MdMenuModule,
-        MdToolbarModule,
-        MdIconModule,
-        MdCardModule,
-        MdSidenavModule,
+        MatButtonModule,
+        MatMenuModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatCardModule,
+        MatSidenavModule,
     ],
     providers: [
         LoggedInGuard

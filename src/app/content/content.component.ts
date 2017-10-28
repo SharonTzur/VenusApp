@@ -1,6 +1,6 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {Router} from "@angular/router";
-import {MdDrawer} from "@angular/material";
+import {MatDrawer} from "@angular/material";
 
 @Component({
     selector: 'app-content',

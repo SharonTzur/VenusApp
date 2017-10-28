@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  apiUrl: "http://localhost/venus-server/public/api"
+  apiUrl: "http://localhost/VenusServer/public/api"
 };
