@@ -1,0 +1,14 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.levels-container {
+    
+}
+.card{
+    text-align: center;
+}
+.card-link {
+    align-self: center;
+}

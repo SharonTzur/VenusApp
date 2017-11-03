@@ -1,3 +1,9 @@
-<div *ngFor="let level of levels">
-  {{level.title}}
+<div class="flex">
+  <mat-card class="card flex" *ngFor="let level of levels">
+    <a [routerLink]="['/content/learning-resources', level.id]" 
+      routerLinkActive="active-link" 
+      (click)="onItemClicked()">
+        <span>{{level.title}}</span>
+    </a>
+  </mat-card>
 </div>
