@@ -19,8 +19,4 @@ export class LevelsComponent implements OnInit {
         })
     }
 
-    onItemClicked() {
-        
-    }
-
 }
