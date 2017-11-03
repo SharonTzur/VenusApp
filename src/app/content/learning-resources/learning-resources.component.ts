@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { LearningResourcesService } from '../../services/learning-resources/learning-resources.service'
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-learning-resources',
@@ -6,10 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./learning-resources.component.css']
 })
 export class LearningResourcesComponent implements OnInit {
+  id
 
-  constructor() { }
+  resourceList
+  constructor(private learningResourcesService:LearningResourcesService, private route:ActivatedRoute,) { }
 
   ngOnInit() {
+    this.route.params.subscribe(params => {
+      this.id = params['id'];
+      this.learningResourcesService.getResources(this.id).subscribe((data)=>{
+        this.resourceList = data;
+      })
+
+    });
+
   }
 
 }
