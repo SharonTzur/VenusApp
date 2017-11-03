@@ -32,10 +32,10 @@ export class AuthService {
     }
 
     setAuthObject(authObject) {
-        this.authObject = authObject.data;
-        this.token = authObject.data.token;
-        this.localStorageService.set('authObject', authObject.data);
-        this.localStorageService.set('token', authObject.data.token);
+        this.authObject = authObject;
+        this.token = authObject.token;
+        this.localStorageService.set('authObject', authObject);
+        this.localStorageService.set('token', authObject.token);
     }
 
     deleteAuthObject() {
