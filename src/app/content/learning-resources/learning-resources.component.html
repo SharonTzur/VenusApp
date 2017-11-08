@@ -1,13 +1,14 @@
 <md-grid-list col="1" rowHeight="fit" class="resources-container">
 
-  <md-grid-tile class="resources" *ngFor="let resource of resourceList">
+  <md-grid-tile class="resource" *ngFor="let resource of resourceList">
 
     <h2>
       {{resource?.title}}
     </h2>
+
     <iframe *ngIf="resource?.type==='video'"
             width="420" height="315"
-            src="{{resource?.url}}">
+           >
     </iframe>
 
 

@@ -5,7 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-learning-resources',
   templateUrl: './learning-resources.component.html',
-  styleUrls: ['./learning-resources.component.css']
+  styleUrls: ['./learning-resources.component.scss']
 })
 export class LearningResourcesComponent implements OnInit {
   id
@@ -19,9 +19,6 @@ export class LearningResourcesComponent implements OnInit {
       this.learningResourcesService.getResources(this.id).subscribe((data)=>{
         this.resourceList = data;
       })
-
     });
-
   }
-
 }
