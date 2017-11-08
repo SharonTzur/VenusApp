@@ -11,9 +11,11 @@ import {DashboardComponent} from "./content/dashboard/dashboard.component";
 import {LearningProcessComponent} from "./content/learning-process/learning-process.component";
 import {LearningResourcesComponent} from "./content/learning-resources/learning-resources.component";
 import {LevelsComponent} from "./content/levels/levels.component";
+import {ResourceComponent} from "./content/resource/resource.component";
+
 
 const appRoutes: Routes = [
-
+    
     {path: '', redirectTo: 'account/login', pathMatch: 'full'},
     {
         path: 'account', component: AccountComponent,
@@ -29,10 +31,13 @@ const appRoutes: Routes = [
         children: [
             {path: 'dashboard', component: DashboardComponent},
             {path: 'levels', component: LevelsComponent},
-            {path: 'learning-resources/:level', component: LearningResourcesComponent,
-            children:['/resource/:id']},
+            {
+                path: 'learning-resources/:level', component: LearningResourcesComponent,
+                children: [
+                    {path: 'resource/:id', component: ResourceComponent}
+                    ]},
             {path: 'learning-process', component: LearningProcessComponent},
-
+        
         ]
     }
 

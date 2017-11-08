@@ -8,6 +8,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LearningProcessComponent } from './learning-process/learning-process.component';
 import { LearningResourcesComponent } from './learning-resources/learning-resources.component';
 import { LevelsComponent } from './levels/levels.component';
+import { ResourceComponent } from './resource/resource.component';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { LevelsComponent } from './levels/levels.component';
     DashboardComponent,
     LearningProcessComponent,
     LearningResourcesComponent,
-    LevelsComponent
+    LevelsComponent,
+    ResourceComponent
   ]
 })
 
