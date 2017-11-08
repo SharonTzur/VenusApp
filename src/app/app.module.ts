@@ -17,6 +17,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {ContentModule} from "./content/content.module";
 import {LevelService} from "./services/level/level.service";
 import {LearningResourcesService} from "./services/learning-resources/learning-resources.service";
+import {ResourceService} from "./services/resource/resource.service";
 
 @NgModule({
     declarations: [
@@ -41,6 +42,8 @@ import {LearningResourcesService} from "./services/learning-resources/learning-r
         AuthService,
         LevelService,
         LearningResourcesService,
+        ResourceService,
+        
         {provide: LocationStrategy, useClass: HashLocationStrategy}
     ],
     bootstrap: [AppComponent]
