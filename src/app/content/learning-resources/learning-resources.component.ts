@@ -8,15 +8,15 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./learning-resources.component.scss']
 })
 export class LearningResourcesComponent implements OnInit {
-  id
+  level
 
   resourceList
   constructor(private learningResourcesService:LearningResourcesService, private route:ActivatedRoute,) { }
 
   ngOnInit() {
     this.route.params.subscribe(params => {
-      this.id = params['id'];
-      this.learningResourcesService.getResources(this.id).subscribe((data)=>{
+      this.level = params['level'];
+      this.learningResourcesService.getResources(this.level).subscribe((data)=>{
         this.resourceList = data;
       })
     });

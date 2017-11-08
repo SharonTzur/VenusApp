@@ -29,7 +29,8 @@ const appRoutes: Routes = [
         children: [
             {path: 'dashboard', component: DashboardComponent},
             {path: 'levels', component: LevelsComponent},
-            {path: 'learning-resources/:id', component: LearningResourcesComponent},
+            {path: 'learning-resources/:level', component: LearningResourcesComponent,
+            children:['/resource/:id']},
             {path: 'learning-process', component: LearningProcessComponent},
 
         ]
