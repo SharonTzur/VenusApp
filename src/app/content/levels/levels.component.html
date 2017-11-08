@@ -1,8 +1,11 @@
 <div class="flex">
   <mat-card class="card flex" *ngFor="let level of levels">
-    <a [routerLink]="['/content/learning-resources', level.id]" 
-      routerLinkActive="active-link">
-        <span>{{level.title}}</span>
-    </a>
+    <div class="img-container">
+      <img class="card-img" [src]="level.imageUrl" [alt]="level.title">
+      <a  [routerLink]="['/content/learning-resources', level.id]" 
+        routerLinkActive="active-link">
+          <span class="card-link">{{level.title}}</span>
+      </a>
+    </div>
   </mat-card>
 </div>

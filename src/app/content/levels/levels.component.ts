@@ -4,7 +4,7 @@ import {LevelService} from "../../services/level/level.service";
 @Component({
     selector: 'app-levels',
     templateUrl: './levels.component.html',
-    styleUrls: ['./levels.component.css']
+    styleUrls: ['./levels.component.scss']
 })
 export class LevelsComponent implements OnInit {
 

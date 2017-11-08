@@ -1,0 +1,36 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.levels-container {
+    
+}
+.card{
+    text-align: center;
+}
+.card-link {
+    align-self: center;
+}
+.img-container{
+    height: 130px;
+    overflow: hidden;
+    position: relative;
+    .card-img {
+        position: absolute;
+        right: -100px;
+        top: -100px;
+    }
+    .card-link{
+        color: white;
+        z-index: 5;
+        position: absolute;
+        right: 0px;
+        top: 40px;
+        // text-shadow: 2px 2px white;
+        font-size: 2.7em;
+        width: 100%;
+        -webkit-text-stroke-width: 1.9px;
+        -webkit-text-stroke-color: black;
+    }
+}
