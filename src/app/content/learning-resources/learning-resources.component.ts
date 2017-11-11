@@ -9,8 +9,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class LearningResourcesComponent implements OnInit {
   level
-
   resourceList
+  
   constructor(private learningResourcesService:LearningResourcesService, private route:ActivatedRoute,) { }
 
   ngOnInit() {

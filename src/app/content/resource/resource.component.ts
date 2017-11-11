@@ -9,14 +9,16 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ResourceComponent implements OnInit {
   id
+  level
   resource
   
   constructor(private route:ActivatedRoute, private resourceService:ResourceService) { }
   
   ngOnInit() {
     this.route.params.subscribe(params => {
+      this.level = params['level'];
       this.id = params['id'];
-      this.resourceService.getResource(this.id).subscribe((data)=>{
+      this.resourceService.getResource(this.level, this.id).subscribe((data)=>{
         this.resource = data;
       })
     });

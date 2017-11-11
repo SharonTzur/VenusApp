@@ -6,8 +6,8 @@ export class ResourceService {
 
   constructor(private httpService:HttpService) { }
   
-  public getResource(id){
-    return this.httpService.get([], '/v1/levels/' + id + '/learningResources',  true)
+  public getResource(level, id){
+    return this.httpService.get([], '/v1/levels/' + level + '/learningResources/' + id,  true)
   }
   
 }

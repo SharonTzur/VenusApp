@@ -31,8 +31,7 @@ const appRoutes: Routes = [
         children: [
             {path: 'dashboard', component: DashboardComponent},
             {path: 'levels', component: LevelsComponent},
-            {
-                path: 'learning-resources/:level', component: LearningResourcesComponent,
+            {path: 'learning-resources/:level', component: LearningResourcesComponent,
                 children: [
                     {path: 'resource/:id', component: ResourceComponent}
                 ]

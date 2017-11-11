@@ -6,7 +6,7 @@ export class LearningResourcesService {
 
   constructor( private httpService:HttpService) { }
 
-  public getResources(id){
-    return this.httpService.get([], '/v1/levels/' + id + '/learningResources',  true)
+  public getResources(level){
+    return this.httpService.get([], '/v1/levels/' + level + '/learningResources',  true)
   }
 }
